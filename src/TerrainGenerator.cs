@@ -6,16 +6,16 @@ public class TerrainGenerator : MonoBehaviour {
 
     // main terrain
     [Range(2, 256)]   public int resolution = 10;
-    [Range(0, 1500)]  public float amplitude = 2;
     [Range(0,400)]    public float frequency = 1;
     [Range(.5f, 100)] public float tileScale = 1;
 
     public float xOffset, yOffset, seed;
+    public float amplitude = 2;
 
     // terrain style
     [Range(1, 55)]   public int octaves = 1;
     [Range(0, 1.75f)] public float lacunarity;
-    [Range(0, .5f)]  public float persistance;
+    [Range(0, 100.5f)]  public float persistance;
 
     MeshFilter meshFilter;
     TerrainTile tile;
